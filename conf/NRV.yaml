@@ -3,7 +3,8 @@ forecasts:
     - standalone_forecasts  # standalone forecasts = "pure" toy models forecasts without any extra component (DFI, IAU, Fullpos...)
 
 assim:
-    - BSM_4D_arpege  # BSM = Bator+Screening+Minim
+    - OOPSBSM_4D_arpege  # BSM = Bator+Screening+Minim
+    - CNT0BSM_4D_arpege  # BSM = Bator+Screening+Minim
     - BSM_3D_arome  # BSM = Bator+Screening+Minim
     - BsC_arpege  # BsC = Bator_surf+Canari
 
