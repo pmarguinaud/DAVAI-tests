@@ -1,6 +1,12 @@
 forecasts:
-    - canonical_forecasts  # canonical forecasts = close to operations, including extra components
-    - standalone_forecasts  # standalone forecasts = "pure" toy models forecasts without any extra component (DFI, IAU, Fullpos...)
+    - standalone_forecast_alaro0_antwrp1300                # standalone forecasts = "pure" toy models forecasts without any extra component (DFI, IAU, Fullpos...)
+    - standalone_forecast_alaro1_antwrp1300
+    - standalone_forecast_arome_corsica2500
+    - standalone_forecast_arpege_globaltst149c24
+    - standalone_forecast_arpege_nosfx_globaltst149c24
+    - standalone_forecast_ifs_global21
+    - canonical_forecasts_arpege_global798c22              # canonical forecasts = close to operations, including extra components
+    - canonical_forecasts_arpege_apl_global798c22
 
 assim:
     - OOPSBSM_4D_arpege  # BSM = Bator+Screening+Minim
