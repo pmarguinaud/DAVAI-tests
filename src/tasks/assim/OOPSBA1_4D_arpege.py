@@ -20,9 +20,8 @@ def setup(t, **kw):
                     BatorODB(tag='batodb', ticket=t, **kw),
                     # delayed_fail to let the OOPS family run before raising error
                     Family(tag='oops', ticket=t, nodes=[
-                        Family(tag='seq', ticket=t, on_error='delayed_fail', nodes=[
-                            ScreeningOOPS(tag='screeningOOPS', ticket=t, **kw),
-                            MinimOOPS(tag='minimOOPS', ticket=t, **kw),
+                        Family(tag='allinone', ticket=t, nodes=[
+                            Analyse4dvar(tag='Analyse4dvar', ticket=t, **kw),
                             ], **kw),
                         ], **kw),
                     ], **kw),
