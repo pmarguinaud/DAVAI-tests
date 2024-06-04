@@ -23,10 +23,10 @@ def setup(t, **kw):
             loopsuffix='.{}',
             nodes=[
                 Family(tag='alaro', ticket=t, on_error='delayed_fail', nodes=[
-                    Family(tag='antwrp1300', ticket=t, nodes=[
-                        StandaloneAlaroForecast(tag='forecast-alaro1-antwrp1300', ticket=t, on_error='delayed_fail', **kw),
-                        ], **kw),
-                    ], **kw),
+                    # FIXME 49T2:
+                    #Family(tag='chmh2325', ticket=t, nodes=[
+                    #    StandaloneAlaroForecast(tag='forecast-alaro1_sfx-chmh2325', ticket=t, **kw),
+                    #    ], **kw),
                 ], **kw),
         ],
     )

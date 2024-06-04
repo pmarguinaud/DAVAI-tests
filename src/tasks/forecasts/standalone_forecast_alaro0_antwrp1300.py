@@ -24,7 +24,7 @@ def setup(t, **kw):
             nodes=[
                 Family(tag='alaro', ticket=t, on_error='delayed_fail', nodes=[
                     Family(tag='antwrp1300', ticket=t, nodes=[
-                        StandaloneAlaroForecast(tag='forecast-alaro0-antwrp1300', on_error='delayed_fail', ticket=t, **kw),
+                        StandaloneAlaroForecast(tag='forecast-alaro0-antwrp1300', ticket=t, on_error='delayed_fail', **kw),
                         ], **kw),
                     ], **kw),
                 ], **kw),
