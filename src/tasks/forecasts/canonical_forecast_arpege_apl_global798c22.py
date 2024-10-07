@@ -23,7 +23,6 @@ def setup(t, **kw):
             nodes=[
                 Family(tag='arpege', ticket=t, on_error='delayed_fail', nodes=[
                     Family(tag='global798c22', ticket=t, nodes=[
-                        CanonicalArpegeForecast(tag='forecast-arpege-global798c22', ticket=t, on_error='delayed_fail', **kw),
                         CanonicalArpegeAplForecast(tag='forecast-arpege_apl-global798c22', ticket=t, **kw),
                         ], **kw),
                     ], **kw),
